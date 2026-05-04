@@ -1,5 +1,7 @@
 # 🕵️‍♂️ Prop Hunt (Hot Potato Twist)
 
+⚠️ **This repository contains source code only. Full playable build is available on my portfolio.**
+
 A multiplayer party game inspired by classic Prop Hunt — but with a **Hot Potato mechanic** that constantly shifts pressure between players.
 
 ---
@@ -17,29 +19,27 @@ The “hunter” role is dynamically transferable, turning the game into a **hig
 ## 🚀 Features
 
 * 🧍‍♂️ **Multiplayer Gameplay**
-
   * Real-time player interactions
   * Role switching (Prop ↔ Hunter)
 
 * 🎭 **Prop Disguise System**
-
   * Transform into environmental objects
   * Blend into surroundings strategically
 
 * 🔥 **Hot Potato Mechanic**
-
   * Hunter role transfers between players
   * Constant pressure and dynamic gameplay
 
 * 🧠 **Strategic Depth**
-
   * Not just hiding — timing and positioning matter
   * Players must decide when to stay hidden or take risks
 
+---
+
 ## 🛠️ Tech Stack
 
-* **Engine:** Unreal Engine 5
-* **Language:** C++ / Blueprints
+* **Engine:** Unreal Engine 5  
+* **Language:** C++ / Blueprints  
 * **Networking:** UE Multiplayer Framework (Replication, RPCs)
 
 ---
@@ -47,35 +47,48 @@ The “hunter” role is dynamically transferable, turning the game into a **hig
 ## ⚙️ Key Systems Implemented
 
 * 🔄 **Dynamic Role Transfer System**
-
   * Hunter role reassignment (Hot Potato logic)
   * Timer-driven win condition tied to role state
 
 * 🌐 **Multiplayer Networking (UE5)**
-
   * Replication of player states and transforms
   * RPCs for role switching, interactions, and events
   * Session hosting & discovery (LAN)
 
 * 🎭 **Prop Morph System**
-
   * Runtime mesh switching with collision adjustments
   * Alignment & rotation to match environment
 
 * 🎯 **Interaction & Detection System**
-
   * Hunter interaction checks (hit/trace-based)
   * Feedback for correct/incorrect detection
 
 * 🎮 **Player Controller & Camera Handling**
-
   * Seamless control between prop and hunter states
   * Camera adaptation based on role
 
 * 📊 **Game State Management**
-
   * Centralized match flow (start, timer, end conditions)
   * Player role tracking and synchronization
+
+---
+
+## 🧠 Challenges Solved
+
+* Handling **role desync issues** during multiplayer role transfer  
+* Ensuring **reliable state replication** across all clients  
+* Managing **prop transformation** with correct collision + alignment  
+* Preventing edge cases during **mid-timer role switching**  
+* Maintaining consistent gameplay under **network latency conditions**
+
+---
+
+## 📍 Where to Start (Code Overview)
+
+* `PH_GameMode` → Core match flow & rules  
+* `PH_Player_Prop` → Prop behavior & transformation  
+* `PH_MorphComponent` → Morph system logic  
+* `PH_PlayerController` → Input & role handling  
 
 ---
 
@@ -83,8 +96,8 @@ The “hunter” role is dynamically transferable, turning the game into a **hig
 
 This repository contains **source code only**.
 
-👉 You can find the playable build and full portfolio here:
-**[https://vamsidharmavarapu.vercel.app/](https://vamsidharmavarapu.vercel.app/)**
+👉 Playable build & full portfolio:  
+**https://vamsidharmavarapu.vercel.app/**
 
 ---
 
@@ -92,67 +105,52 @@ This repository contains **source code only**.
 
 This project is designed primarily for **LAN (Local Network) multiplayer testing**.
 
-* Ensure all devices are on the **same network** (same Wi-Fi or router)
-* One player hosts, others join using local session discovery
+* Ensure all devices are on the **same network**  
+* One player hosts, others join via session discovery  
 
 ---
 
 ## 🧩 Troubleshooting (If Multiplayer Doesn’t Work)
 
-If sessions are not found or connection fails, try the following:
-
-* Disable **VPNs** (they often break local session discovery)
-* In **View Network Connections (Windows)**:
-
-  * Disable unused adapters (VPN adapters, virtual adapters, extra Ethernet/Wi-Fi)
-* Make sure **Firewall** is not blocking the build (allow private network access)
-* Ensure all players are on the **same subnet** (same router, not mobile hotspot + Wi-Fi mix)
-
-These issues are common with Unreal Engine LAN setups.
+* Disable **VPNs**  
+* Disable unused adapters in **Network Connections (Windows)**  
+* Allow the app through **Firewall (Private Network)**  
+* Ensure all devices are on the **same subnet**  
 
 ---
 
 ## 🧪 Current Status
 
-* ✅ Core gameplay implemented
-* ✅ Multiplayer working
-* 🔄 Polishing & feature expansion in progress
+* ✅ Core gameplay implemented  
+* ✅ Multiplayer working  
+* 🔄 Polishing & feature expansion in progress  
 
 ---
 
-## 📌 Future Improvements
-
-* More prop variety & maps
-* UI/UX polish
-* Sound design & feedback
-* Matchmaking / lobby system
-* Anti-cheese mechanics (exploit prevention)
-
----
 
 ## 🎯 What Makes It Interesting
 
 Unlike traditional Prop Hunt:
 
-* The hunter isn’t fixed
-* Pressure rotates between players
+* The hunter isn’t fixed  
+* Pressure rotates between players  
 * Creates **emergent gameplay + psychological tension**
 
 ---
 
 ## 📷 Preview
 
-*(Add gameplay screenshots / GIFs here — highly recommended)*
+*(Add gameplay screenshots / GIFs here — this will massively boost impact)*
 
 ---
 
 ## 👤 Author
 
-**Vamsi (gamerthing4)**
-Game Developer focused on gameplay systems & multiplayer mechanics
+**Vamsi (gamerthing4)**  
+Game Developer focused on gameplay systems & multiplayer mechanics  
 
 ---
 
 ## 📄 License
 
-MIT License
+MIT License  
