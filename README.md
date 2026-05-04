@@ -1,6 +1,3 @@
-# HotProp
-Multiplayer Prop Hunt with a Hot Potato twist — dynamic role switching, LAN networking, and strategic prop gameplay built in Unreal Engine 5.
-
 # 🕵️‍♂️ Prop Hunt (Hot Potato Twist)
 
 A multiplayer party game inspired by classic Prop Hunt — but with a **Hot Potato mechanic** that constantly shifts pressure between players.
