@@ -138,12 +138,6 @@ Unlike traditional Prop Hunt:
 
 ---
 
-## 📷 Preview
-
-*(Add gameplay screenshots / GIFs here — this will massively boost impact)*
-
----
-
 ## 👤 Author
 
 **Vamsi (gamerthing4)**  
